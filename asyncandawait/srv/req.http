@@ -1,0 +1,28 @@
+
+POST http://localhost:4004/odata/v4/my/PurchaseOrders
+Prefer: respond-async
+Content-Type: application/json;charset=UTF-8
+
+{
+  "PuchaseId": "12",
+  "status": "Pending..."
+}
+
+###
+
+POST http://localhost:4004/odata/v4/my/Order
+Prefer: respond-async
+Content-Type: application/json
+
+{
+  "OrderId": "1234"
+}
+
+###get
+
+GET http://localhost:4004/odata/v4/my/PurchaseOrders(bdf38867-23dc-44fa-872c-a18ebb0c209f)
+
+
+###
+
+GET http://localhost:4004/odata/v4/my/ApprovalStatus
